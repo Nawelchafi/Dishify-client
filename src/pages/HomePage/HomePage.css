@@ -1,0 +1,81 @@
+.cover {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Prevents overflow of child elements */
+  box-sizing: border-box;
+}
+.cover-img {
+  width: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 600px;
+}
+.headers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 15%;
+  left: 7%;
+  text-align: left;
+  color: black;
+  z-index: 10;
+  /* -webkit-text-stroke: 1px #2E6C3F; /* Border around each letter */
+}
+
+.headers h1 {
+  width: 60%;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 5px;
+}
+
+.headers h3 {
+  width: 60%;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 510;
+  margin-top: 10px;
+  padding: 0;
+  color: #2e6c3f;
+}
+.join-btn {
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #2e6c3f;
+  text-decoration: none;
+  color: White;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.join-btn .arrow {
+  color: white;
+  padding: 0 10px;
+}
+.join-btn:hover {
+
+transform: rotate(5deg);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.feature-card {
+width: 20%;
+}
+.features-icon {
+color: #2e6c3f;
+
+}
+.feature-cards h2{
+
+}
+.feature-cards p {
+
+}
