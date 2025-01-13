@@ -5,10 +5,14 @@ import logo from "../../../src/Dishify_logo.png"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState(false);
 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+  const handleclick = () => {
+    setActiveLink(true)
   };
   return (
     <nav className="nav-container">
