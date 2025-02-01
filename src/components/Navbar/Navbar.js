@@ -5,22 +5,20 @@ import logo from "../../../src/Dishify_logo.png"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(false);
+
 
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const handleclick = () => {
-    setActiveLink(true)
-  };
+ 
   return (
     <nav className="nav-container">
       <section className="logo">
         <img src={logo} alt="logo-disihify" />
       </section>
       <div style={{ display: "flex ", gap: "10px" ,  }}>
-        <Link to="/login" className="hamburger" style={{ textDecoration: "none" }}><i className="ri-user-fill  ">
+        <Link to="/login" className="hamburger" style={{ textDecoration: "none" }} ><i className="ri-user-fill ">
         </i></Link>
         {/* Hamburger Button */}
 
@@ -31,17 +29,17 @@ function Navbar() {
         <Link to="/">
           Home
         </Link>
-        <Link to="/recipies">
+        <Link to="/recipies" >
           Recipies
         </Link>
-        <Link to="/about">
+        <Link to="/about" >
           About
         </Link>
-        <Link to="/FAQ">
+        <Link to="/FAQ" >
           FAQ
         </Link>
         <div className="registration">
-          <Link className="register" to="/register">
+          <Link className="register" to="/register" >
             register
           </Link>
           <Link className="login" to="/login">

@@ -7,7 +7,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import RecipiesPage from "./pages/RecipiesPage/RecipiesPage"
 import SignUpPage from "./pages/SignUpPage/SignUpPage"
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
-
+import LogInPage from './pages/LogInPage/LogInPage';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/recipies" element={<RecipiesPage />} />
-        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/register" element={<SignUpPage />} />
+        <Route path="/login" element={<LogInPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

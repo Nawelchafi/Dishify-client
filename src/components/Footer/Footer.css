@@ -13,7 +13,6 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
- 
 }
 
 .social-media {
@@ -28,36 +27,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: 10px;
+}
+.icons i {
+    color: white;
+}
+.footer-container h3 {
+  color: white;
 }
 
 .social-media a {
   text-decoration: none;
   color: white;
-  font-size: 24px; 
+  font-size: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; 
-  height: 40px; 
-  border-radius: 50%; 
-  background-color: transparent; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-media a:hover {
-  color: #2e6c3f; 
-  background-color: #d5e893; 
+  color: #2e6c3f;
+  background-color: #d5e893;
 }
 @media (max-width: 768px) {
- .footer-container {
+  .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
- 
-}
-
+  }
 }
