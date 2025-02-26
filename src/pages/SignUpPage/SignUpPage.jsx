@@ -31,22 +31,25 @@ export default function Signup() {
     return (
         <div className="signup-container">
             <form onSubmit={handleSubmit} className="signup-form">
-                <h2 className="signup-title">Signup</h2>
+                <h2 className="signup-title">Create Acount</h2>
                 {error && <p className="error-message">{error}</p>}
                 {success && <p className="success-message">{success}</p>}
-                <div className="input-group">
-                    <label>Name</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+                <div className="inputs-container">
+                    <div className="input-group">
+
+                        <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
+                    </div>
+                    <div className="input-group">
+
+                        <input type="email" name="email" placeholder="Email Adress" value={formData.email} onChange={handleChange} required />
+                    </div>
+                    <div className="input-group">
+
+                        <input type="password" placeholder="Password" name="password" value={formData.password} onChange={handleChange} required />
+                    </div>
+                    <button type="submit" className="signup-button">Sign Up</button>
+
                 </div>
-                <div className="input-group">
-                    <label>Email</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-                </div>
-                <div className="input-group">
-                    <label>Password</label>
-                    <input type="password" name="password" value={formData.password} onChange={handleChange} required />
-                </div>
-                <button type="submit" className="signup-button">Sign Up</button>
             </form>
         </div>
     );
