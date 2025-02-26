@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
+import "./LogInPage.css"
 function LogInPage() {
     const [formData, setFormData] = useState({
         email: "",
@@ -37,15 +38,17 @@ function LogInPage() {
                 <h2 className="login-title">login</h2>
                 {error && <p className="error-message">{error}</p>}
                 {success && <p className="success-message">{success}</p>}
-                <div className="input-group">
-                    <label>Email</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+                <div className="inputs-container">
+                    <div className="input-group">
+
+                        <input type="email" name="email" placeholder="Email Adress" value={formData.email} onChange={handleChange} required />
+                    </div>
+                    <div className="input-group">
+
+                        <input type="password" placeholder="Password" name="password" value={formData.password} onChange={handleChange} required />
+                    </div>
+                    <button type="submit" className="login-button">login</button>
                 </div>
-                <div className="input-group">
-                    <label>Password</label>
-                    <input type="password" name="password" value={formData.password} onChange={handleChange} required />
-                </div>
-                <button type="submit" className="login-button">Sign Up</button>
             </form>
         </div>
     );
